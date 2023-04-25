@@ -1,0 +1,435 @@
+/* 메인페이지 */
+.section1{}
+.section1 .swiper{
+    height: 500px;
+
+}
+
+.section1 .swiper-slide::before{
+    content: '';
+    position: absolute;
+    top: 0;left: 0;
+    right: 0;bottom: 0;
+    background: rgba(0,0,0,0.4);
+}
+.section1 .swiper-pagination-bullet{
+    background: #fff;
+    width: 25px;
+    height: 3px;
+    border-radius: 0;
+}
+
+
+
+.section1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+.section1 .info-box{
+    position: absolute;
+    top: 0;left: 0;
+    padding: 50px;
+    color: #fff;
+}
+.section1 .info-box strong{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+.section1 .info-box p{
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+
+
+.section2{
+    display: flex;
+    padding: 100px 0;
+}
+.section2 .info-area{
+    padding-right: 50px;
+    width: 50%;
+}
+.section2 h2{
+    color:#2365a6;
+    font-size: 18px;
+    font-weight: 500;
+}
+.section2 strong{
+    font-size: 38px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin: 20px 0 30px;
+}
+.section2 p{
+    font-size: 18px;
+    color: #858585;
+    line-height: 1.5;
+}
+.section2 a{
+    background: #2365a6;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.section2 .img-area{
+    width: 50%;
+}
+.section2 .img-area img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.section3{}
+.section3 .title-area{}
+.section3 h2{
+    color:#2365a6;
+    font-size: 18px;
+    font-weight: 500;
+}
+.section3 strong{
+    font-size: 38px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin: 20px 0 30px;
+}
+
+.section3 ul{
+    display: flex;
+    gap: 10px;
+}
+.section3 li{
+    flex: 1;
+}
+.section3 li a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.section3 li img{
+    width: 100%;
+    transition: 0.3s;
+}
+.section3 li:hover img{
+    transform: scale(1.1);
+}
+.section3 li p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+
+.section4{
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.section4 .content{
+    position: relative;
+    width: calc(50% - 10px);
+    height: 300px;
+}
+.section4 .content::before{
+    content: '';
+    position: absolute;
+    top: 0;left: 0;
+    right: 0;bottom: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+
+
+.section4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section4 .info-box{
+    position: absolute;
+    top: 0;left: 0;
+    padding: 50px;
+    color: #eee;
+}
+
+.section4 h3{
+    font-size: 38px;
+    font-weight: 500;
+}
+.section4 p{
+    font-size: 18px;
+    margin: 10px 0 20px;
+}
+.section4 a{
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.section5{
+    display: flex;
+}
+.section5 .info-area{
+    flex: 1;
+    background: #eee;
+    display: flex;
+    justify-content: flex-end;
+}
+.section5 .info-area .wrap{
+    width: 600px;
+    /* background: #00f; */
+    display: flex;
+    padding: 100px 0;
+}
+
+.section5 .info-area .info-box{
+    flex: 1;
+}
+.section5 .info-area .info-box h3{
+    font-size: 28px;font-weight: 500;
+}
+.section5 .info-area .info-box a{
+    font-size: 26px;
+    margin: 30px 0 10px;
+    display: inline-block;
+}
+.section5 .info-area .info-box p{
+    font-size: 18px;
+    color: #858585;
+}
+
+
+
+
+
+
+
+
+.section5 .contact-area{
+    flex: 1;
+    /* background: #f00; */
+    display: flex;
+    align-items: center;
+}
+
+
+.section5 .contact-area .wrap{
+    width: 600px;
+    /* background: #0f0; */
+    padding-left: 50px;
+}
+.section5 .contact-area p{
+    font-size: 28px;font-weight: 500;
+}
+.section5 .contact-area a{
+    border: 1px solid #222;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+
+
+
+/* 미디어쿼리 (화면사이즈에 따라 다르게 보여줄때)*/
+
+
+/* 작은pc 1300~[1025]*/
+@media (max-width:1300px) {
+
+
+
+
+    .section5 .info-area{
+        padding-left: 50px;
+      
+    }
+    .section5 .info-area .wrap{
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .section5 .contact-area{
+        padding-right: 50px;
+    }
+    .section5 .contact-area .wrap{
+        width: 100%;
+    }
+    
+}
+
+/* 테블릿 1024~[768]*/
+@media (max-width:1024px) {
+
+    .section2{
+        flex-direction: column;
+    }
+    .section2 .info-area{
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .section2 .img-area{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+
+
+    .section4 .info-box{
+        padding: 20px;
+    }
+
+
+
+    
+}
+
+/* 모바일 767~[320] 320부터 767px까지를 잡는다. */
+@media (max-width:767px) {
+
+
+    .section1 .swiper{
+        height: calc(100vh - 160px);
+    }
+
+    .section1 .info-box{
+        padding: 20px;
+        top: auto;
+        bottom: 50px;
+    }
+    .section1 .info-box strong{
+        font-size: 36px;
+    }
+    .section1 .info-box p{
+        font-size: 18px;
+    }
+    
+
+    .section2{padding: 50px 0;}
+    .section2 h2{font-size: 14px;}
+    .section2 strong{font-size: 22px; margin: 10px 0 15px;}
+    .section2 p{ font-size: 14px; }
+    .section2 a{
+        padding: 7px 13px;
+        font-size: 12px;
+        margin-top: 25px;
+    }
+    
+    
+    .section3 h2{font-size: 14px;}
+    .section3 strong{font-size: 22px; margin: 10px 0 15px;}
+
+    .section3 ul{
+        flex-wrap: wrap;
+    }
+    .section3 li{
+        flex-basis: calc(50% - 5px);
+    }
+    .section3 li p{
+        font-size: 12px;
+    }
+
+
+
+
+
+
+    /*  */
+    .section4{
+        gap: 10px;
+    }
+    .section4 .content{
+        width: 100%;
+        height: auto;
+    }
+    .section4 img{
+        position: absolute;
+        top: 0;left: 0;
+        z-index: -1;
+    }
+    .section4 .info-box{
+        position: relative;
+        min-height: 150px;
+    }
+    .section4 h3{
+        font-size: 22px;
+    }
+    .section4 p{
+        font-size: 12px;
+    }
+    .section4 a {
+        padding: 7px 13px;
+        font-size: 12px;
+    }
+
+    .section5{
+        flex-direction: column;
+    }
+    .section5 .info-area{
+        padding: 0 10px;
+    }
+
+    .section5 .info-area .wrap{
+        padding: 50px 0;
+    }
+
+    .section5 .info-area .info-box h3{
+        font-size: 22px;
+    }
+    .section5 .info-area .info-box a{
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .section5 .info-area .info-box p{
+        font-size: 15px;
+    }
+
+
+
+
+
+    .section5 .contact-area{
+        padding: 50px 10px;
+    }
+    .section5 .contact-area .wrap{
+        padding: 0;
+    }
+    .section5 .contact-area p{
+        font-size: 22px;
+    }
+    .section5 .contact-area a{
+        padding: 7px 13px;
+        font-size: 12px;
+    }
+
+
+
+    
+
+
+
+
+
+}
+
+
+
+

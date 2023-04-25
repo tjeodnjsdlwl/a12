@@ -1,0 +1,105 @@
+@import './reset.css';
+/* inner */
+.inner{
+    max-width: 1300px;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+
+
+/* 헤더,푸터 */
+.header{
+    border-bottom: 1px solid #eee;
+}
+.header .header-inner{
+    max-width: 1300px;
+    padding: 0 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.header .logo{}
+
+.gnb{display: flex;}
+.gnb .gnb-list{display: flex;}
+.gnb .gnb-item{ padding: 0 20px; }
+.gnb .gnb-item > a{display: block;
+    line-height: 40px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.gnb .gnb-item:hover > a{
+    color: #2365a6;
+}
+
+.gnb .sub{display: none;}
+
+
+.gnb .lang-area{}
+.gnb .lang-area img{width: 40px;}
+
+
+.footer{
+    text-align: center;
+    font-size: 12px;
+    padding: 30px 0;
+    /* background: #eee; */
+}
+
+
+.header .btn-menu{display: none;}
+
+
+/* 작은pc 1300~[1025]*/
+@media (max-width:1300px) {
+    .gnb .gnb-list{
+        display: none;
+    }
+    .gnb .lang-area{
+        display: none;
+    }
+    .header .header-inner{
+        height: 80px;
+    }
+    .header .btn-menu{display: block;
+        background: transparent;
+        border: 0;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    
+}
+
+/* 테블릿 1024~[768]*/
+@media (max-width:1024px) {
+    
+}
+
+/* 모바일 767~[320] 320부터 767px까지를 잡는다. */
+@media (max-width:767px) {
+    .header .header-inner{
+        height: 60px;
+        padding: 0 15px;
+    }
+    .header h1 img{
+        height: 28px;
+    }
+
+
+
+    .inner{
+        padding: 0 10px;
+    }
+
+
+
+
+    .footer{
+        font-size: 10px;
+    }
+    
+}
